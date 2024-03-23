@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'home#index'
-
+  resources :employees
   get 'about'=>'pages#about_us'
   get 'contact' => 'pages#contact_us'
   get 'PrivacyPolicy' => 'pages#privacy_policy'
